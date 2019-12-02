@@ -1,4 +1,4 @@
-# Genomic Data Science Project: Brain Ddevelopment throug RNA-seq 
+# Genomic Data Science Project: Brain Ddevelopment through RNA-seq 
   
 In this [project](https://www.coursera.org/learn/genomic-data-science-project) I will replicate part of  the data analysis of the RNA-seq experiment conducted in ([Jaffe et al., 2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281298/)).
    
