@@ -98,7 +98,7 @@
   ***Run the script [merge_counts.R](scripts/merge_counts.R)***  
   + Exploratory Analysis:  
   ***Run the script [exploratory_analysis.R](scripts/exploratory_analysis.R)***  
-  + Differential Expression Analysis:
+  + Differential Expression Analysis:   
   ***Run the script [differential_expression_analysis.R](scripts/differential_expression_analysis.R)***  
   + Epigenetics and Expression Analysis:  
   ***Run the script [epigenetics_expression.R](scripts/epigenetics_expression.R)***
