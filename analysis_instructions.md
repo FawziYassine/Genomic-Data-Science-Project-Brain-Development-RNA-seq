@@ -1,10 +1,3 @@
----
-title: "Analysis Instructions"
-output:
-  html_document:
-    toc: true
----
-
 ## 1. Instructions for Initial Setup and Installation of the Analysis Tools on [AWS Linux Instance](https://aws.amazon.com/amazon-linux-ami/)
 
 Run the following commands in the terminal of your AWS Linux instance:
@@ -25,7 +18,8 @@ Run the following commands in the terminal of your AWS Linux instance:
 
         wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz 
         tar -xvzf ~/sequencing/tools/sratoolkit.current-ubuntu64.tar.gz -C ~/sequencing/tools/ 
-Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:  
+        
+        `Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:`  
                            
         export PATH=$PATH:/home/fawzi/sequencing/tools/sratoolkit.2.9.6-1-ubuntu64/bin  
         source ~/.bashrc  
