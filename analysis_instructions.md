@@ -83,7 +83,7 @@
 
 9. Download the reads of each sample from SRA using SRA Toolkit.
 
-       noh               up sh scripts/download-sra-reads.sh > download-sra-reads.out &
+       nohup sh scripts/download-sra-reads.sh > download-sra-reads.out &
 
 9. Align (map) the reads of each sample to the Human Genome hg32 using HISAT2. 
                                                                      
@@ -95,11 +95,11 @@
      
 9. Analysis using R:
   + Merging the Count Files:  
-  Run the script [merge_counts.R](scripts/merge_counts.R)  
+  ***Run the script [merge_counts.R](scripts/merge_counts.R)***  
   + Exploratory Analysis:  
-  Run the script [exploratory_analysis.R](scripts/exploratory_analysis.R)  
+  ***Run the script [exploratory_analysis.R](scripts/exploratory_analysis.R)***  
   + Differential Expression Analysis:
-  Run the script [differential_expression_analysis.R](scripts/differential_expression_analysis.R)  
+  ***Run the script [differential_expression_analysis.R](scripts/differential_expression_analysis.R)***  
   + Epigenetics and Expression Analysis:  
-  Run the script [epigenetics_expression.R](scripts/epigenetics_expression.R)
+  ***Run the script [epigenetics_expression.R](scripts/epigenetics_expression.R)***
      
