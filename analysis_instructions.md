@@ -1,6 +1,6 @@
 ## 1. Instructions for Initial Setup and Installation of the Analysis Tools on [AWS Linux Instance](https://aws.amazon.com/amazon-linux-ami/)
-
-__*Run the following commands in the terminal of your AWS Linux instance:__*          
+  
+  ***Run the following commands in the terminal of your AWS Linux instance:***            
 
 1.  Initial setup
 
@@ -19,7 +19,7 @@ __*Run the following commands in the terminal of your AWS Linux instance:__*
         wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz 
         tar -xvzf ~/sequencing/tools/sratoolkit.current-ubuntu64.tar.gz -C ~/sequencing/tools/ 
         
-        __*Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:*                                      __                                                                                                                            
+     *Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:*                                      __                                                                                                                            
         export PATH=$PATH:/home/fawzi/sequencing/tools/sratoolkit.2.9.6-1-ubuntu64/bin  
         source ~/.bashrc  
 
@@ -37,7 +37,7 @@ Install updates and required packages on Ubuntu 18.04 (for running make):
         sudo apt-get install zlib1g-dev  
         sudo apt-get install libncurses5-dev  
         sudo apt-get install libncursesw5-dev  
-        sudo apt-get install liblzma-dev  
+                                                                                             sudo apt-get install liblzma-dev  
         make  
 Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:  
     
