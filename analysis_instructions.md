@@ -19,7 +19,8 @@
         wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz 
         tar -xvzf ~/sequencing/tools/sratoolkit.current-ubuntu64.tar.gz -C ~/sequencing/tools/ 
         
-     *Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:*                                      __                                                                                                                            
+     ***Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:***     
+     
         export PATH=$PATH:/home/fawzi/sequencing/tools/sratoolkit.2.9.6-1-ubuntu64/bin  
         source ~/.bashrc  
 
@@ -27,19 +28,22 @@
 
         wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2   
         tar -vxjf ~/sequencing/tools/samtools-1.9.tar.bz2 -C ~/sequencing/tools/
-Install updates and required packages on Ubuntu 18.04 (for running make):  
+
+     ***Install updates and required packages on Ubuntu 18.04 (for running make):***  
+
   
         cd ~/sequencing/tools/samtools-1.9/ 
-        sudo apt-get update  
+        sudo apt-get update    ***
         sudo apt-get install gcc  
         sudo apt-get install make  
         sudo apt-get install libbz2-dev  
         sudo apt-get install zlib1g-dev  
         sudo apt-get install libncurses5-dev  
         sudo apt-get install libncursesw5-dev  
-                                                                                             sudo apt-get install liblzma-dev  
+        sudo apt-get install liblzma-dev  
         make  
-Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:  
+        
+     ***Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:***  
     
         export PATH=$PATH:/home/fawzi/sequencing/tools/samtools-1.9  
         source ~/.bashrc  
@@ -48,7 +52,8 @@ Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:
 
        wget http://ccb.jhu.edu/software/hisat2/dl/hisat2-2.1.0-Linux_x86_64.zip -P ~/sequencing/tools/  
        unzip ~/sequencing/tools/hisat2-2.1.0-Linux_x86_64.zip -d ~/sequencing/tools
-Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:  
+       
+     ***Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:***    
     
        export PATH=$PATH:/home/fawzi/sequencing/tools/hisat2-2.1.0   
        source ~/.bashrc 
@@ -73,8 +78,8 @@ Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:
        sh scripts/gencode.v28.symbols.awk > gencode.v28.symbols.txt
 
 ## 2. Instructions for the Execution of Analysis Tools 
-
-Run the following commands sequentially:
+ 
+***Run the following commands sequentially:***
 
 9. Download the reads of each sample from SRA using SRA Toolkit.
 
