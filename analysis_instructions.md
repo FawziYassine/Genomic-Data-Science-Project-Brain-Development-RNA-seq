@@ -24,7 +24,7 @@
         export PATH=$PATH:/home/fawzi/sequencing/tools/sratoolkit.2.9.6-1-ubuntu64/bin  
         source ~/.bashrc  
 
-3. SAMtools
+3. Installing SAMtools
 
         wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2   
         tar -vxjf ~/sequencing/tools/samtools-1.9.tar.bz2 -C ~/sequencing/tools/
@@ -48,7 +48,7 @@
         export PATH=$PATH:/home/fawzi/sequencing/tools/samtools-1.9  
         source ~/.bashrc  
 
-4. HISAT2
+4.  Installing HISAT2
 
        wget http://ccb.jhu.edu/software/hisat2/dl/hisat2-2.1.0-Linux_x86_64.zip -P ~/sequencing/tools/  
        unzip ~/sequencing/tools/hisat2-2.1.0-Linux_x86_64.zip -d ~/sequencing/tools
@@ -81,15 +81,15 @@
  
 ***Run the following commands sequentially:***
 
-9. Download the reads of each sample from SRA using SRA Toolkit.
+9. Downloading the reads of each sample from SRA using SRA Toolkit.
 
        nohup sh scripts/download-sra-reads.sh > download-sra-reads.out &
 
-9. Align (map) the reads of each sample to the Human Genome hg32 using HISAT2. 
+9. Aligning (mapping) the reads of each sample to the Human Genome hg32 using HISAT2. 
                                                                      
        nohup sh scripts/hisat2.sh > hisat2.out &
 
-9. Quantify the abundance of genes in each sample using HTseq.
+9. Quantifying the abundance of genes in each sample using HTseq.
       
        nohup sxh scripts/htseq-count.sh > htseq-count.out &
      
