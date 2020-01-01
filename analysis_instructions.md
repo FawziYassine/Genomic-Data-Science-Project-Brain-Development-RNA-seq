@@ -6,7 +6,7 @@
 
 ## 1. <a name="a1">Instructions for Initial Setup and Installation of the Analysis Tools</a>  
   
-  *Run the following commands in the terminal of your AWS Linux instance:*            
+  *Run the following commands in the terminal of your Linux instance (AWS):*            
 
 1.  Initial setup
 
