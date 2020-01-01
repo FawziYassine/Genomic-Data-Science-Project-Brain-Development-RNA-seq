@@ -6,7 +6,7 @@
 
 ## 1. <a name="a1">Instructions for Initial Setup and Installation of the Analysis Tools</a>  
   
-  ***Run the following commands in the terminal of your AWS Linux instance:***            
+  *Run the following commands in the terminal of your AWS Linux instance:*            
 
 1.  Initial setup
 
@@ -25,7 +25,7 @@
         wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz 
         tar -xvzf ~/sequencing/tools/sratoolkit.current-ubuntu64.tar.gz -C ~/sequencing/tools/ 
         
-     ***Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:***     
+     *Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:*     
      
         export PATH=$PATH:/home/fawzi/sequencing/tools/sratoolkit.2.9.6-1-ubuntu64/bin  
         source ~/.bashrc  
@@ -35,7 +35,7 @@
         wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2   
         tar -vxjf ~/sequencing/tools/samtools-1.9.tar.bz2 -C ~/sequencing/tools/
 
-     ***Install updates and required packages on Ubuntu 18.04 (for running make):***  
+     *Install updates and required packages on Ubuntu 18.04 (for running make):***    
 
   
         cd ~/sequencing/tools/samtools-1.9/ 
@@ -49,7 +49,7 @@
         sudo apt-get install liblzma-dev  
         make  
         
-     ***Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:***  
+     *Edit /home/fawzi/.bashrc to insert the followig line at the end of the file:*  
     
         export PATH=$PATH:/home/fawzi/sequencing/tools/samtools-1.9  
         source ~/.bashrc  
@@ -85,7 +85,7 @@
 
 ## 2. <a name="a2">Instructions for the Execution of the Analysis</a>
  
-***Run the following commands sequentially:***
+*Run the following commands sequentially:*
 
 9. Downloading the reads of each sample from SRA using SRA Toolkit.
 
@@ -101,11 +101,11 @@
      
 9. Analysis using R:
   + Merging the Count Files:  
-  ***Run the script [merge_counts.R](scripts/merge_counts.R)***  
+  *Run the script [merge_counts.R](scripts/merge_counts.R)*  
   + Exploratory Analysis:  
-  ***Run the script [exploratory_analysis.R](scripts/exploratory_analysis.R)***  
+  *Run the script [exploratory_analysis.R](scripts/exploratory_analysis.R)*  
   + Differential Expression Analysis:   
-  ***Run the script [differential_expression_analysis.R](scripts/differential_expression_analysis.R)***  
+  *Run the script [differential_expression_analysis.R](scripts/differential_expression_analysis.R)***  
   + Epigenetics and Expression Analysis:  
-  ***Run the script [epigenetics_expression.R](scripts/epigenetics_expression.R)***
+  *Run the script [epigenetics_expression.R](scripts/epigenetics_expression.R)*
      
