@@ -1,5 +1,5 @@
 # Set the working directory
-setwd("~/brain/brain-zip/brain-zip/htseq")
+setwd("~/brain/brain-zip/htseq-v2")
 
 # Load fetal samples
 SRX683795 <- read.table("SRR2071348_counts.txt", header = FALSE)
@@ -22,4 +22,4 @@ all(SRX683795[,1] == SRX683797[,1])
 merged_counts <- data.frame(row.names = SRX683795[,1], SRX683795 = SRX683795[,2], SRX683796 = SRX683796[,2]
                             , SRX683799 = SRX683799[,2], SRX683793 = SRX683793[,2]
                             , SRX683794 = SRX683794[,2], SRX683797 = SRX683797[,2])
-write.table(merged_counts, "../../../merged_counts.tsv", quote = FALSE, sep = '\t')
+write.table(merged_counts, "../../merged_counts-v2.tsv", quote = FALSE, sep = '\t')
