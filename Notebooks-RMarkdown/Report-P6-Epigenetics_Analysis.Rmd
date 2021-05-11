@@ -5,9 +5,9 @@ output:
   pdf_document
 ---
 
-The following R script gets the percentage of overlap between the promoters of differentially expressed genes found in Part5 of the Analysis Report (Differential Expression Analysis) and the epigenetically marked (**H3K4me3**) promoters in the fetal and adult brain cells, and in liver cell lines which are retrieved from Annotationhub (**EpigenomeRoadMap**).
+The following R script gets the percentage of overlap between the promoters of differentially expressed genes found in Report-P5-Differential_Expression_Analysis.pdf and the epigenetically marked (**H3K4me3**) promoters in the fetal and adult brain cells, and in liver cell lines which are retrieved from Annotationhub (**EpigenomeRoadMap**).
 
-# 1. Loading the Necessary Libraries and Data found in Part5 of the Analysis Report (Differential Expression Analysis)
+# 1. Loading the Necessary Libraries and Data found in Report-P5-Differential_Expression_Analysis.pdf
 
 ```{r message=FALSE}
 library(AnnotationHub)
@@ -46,7 +46,7 @@ sorted_significant_differ_res_deseq2_shrunk.map = AnnotationDbi::select(EnsDb.Hs
                     keys = as.character(sorted_significant_differ_res_deseq2_shrunk$gene), keytype = "GENEID", columns = "ENTREZID")
 ```
 
-# 4. Get the Promoters of DGEs Found in Part5 of the Analysis Report (Differential Expression Analysis)
+# 4. Get the Promoters of DGEs Found in Report-P5-Differential_Expression_Analysis.pdf
 
 ```{r message=FALSE}
 # get the known genes from Tx database
@@ -56,9 +56,9 @@ txdb.genes = genes(txdb)
 diff.expressed.gene.promoters = promoters(txdb.genes[txdb.genes$gene_id %in% sorted_significant_differ_res_deseq2_shrunk.map$ENTREZID,])
 ```
 
-# 5. Calculate the Percentage of Overlap Between the Promoters of DEGs Found in Part5 of the Analysis Report (Differential Expression Analysis) and the Epigenetically Marked (**H3K4me3**) Promoters in the 3 Different Kind of Cells
+# 5. Calculate the Percentage of Overlap Between the Promoters of DEGs Found in Report-P5-Differential_Expression_Analysis.pdf and the Epigenetically Marked (**H3K4me3**) Promoters in the 3 Different Kind of Cells
 
-The percentage of overlap between the promoters of differentially expressed genes found in Part5 of the Analysis Report (Differential Expression Analysis) and the epigenetically marked (**H3K4me3**) promoters in the **fetal brain cells** is calculated as following:
+The percentage of overlap between the promoters of differentially expressed genes found in Report-P5-Differential_Expression_Analysis.pdf and the epigenetically marked (**H3K4me3**) promoters in the **fetal brain cells** is calculated as following:
 
 ```{r}
 # subsetByOverlaps() extracts the elements in the query (the first argument) that overlap at least one element in the subject (the second argument).
@@ -66,7 +66,7 @@ fetal.brain.overlap.H3K4me3 = subsetByOverlaps(diff.expressed.gene.promoters, fe
 (fetal.brain.overlap.percentage.H3K4me3 = length(fetal.brain.overlap.H3K4me3) / length(sorted_significant_differ_res_deseq2_shrunk.map$ENTREZID) * 100)
 ```
 
-The percentage of overlap between the promoters of differentially expressed genes found in Part5 of the Analysis Report (Differential Expression Analysis) and the epigenetically marked (**H3K4me3**) promoters in the **adult brain cells** is calculated as following:
+The percentage of overlap between the promoters of differentially expressed genes found in Report-P5-Differential_Expression_Analysis.pdf and the epigenetically marked (**H3K4me3**) promoters in the **adult brain cells** is calculated as following:
 
 ```{r}
 # subsetByOverlaps() extracts the elements in the query (the first argument) that overlap at least one element in the subject (the second argument).
@@ -74,7 +74,7 @@ adult.brain.overlap.H3K4me3 = subsetByOverlaps(diff.expressed.gene.promoters, ad
 (adult.brain.overlap.percentage.H3K4me3 = length(adult.brain.overlap.H3K4me3) / length(sorted_significant_differ_res_deseq2_shrunk.map$ENTREZID) * 100)
 ```
 
-The percentage of overlap between the promoters of differentially expressed genes found in Part5 of the Analysis Report (Differential Expression Analysis) and the epigenetically marked (**H3K4me3**) promoters in the **liver cell line** is
+The percentage of overlap between the promoters of differentially expressed genes found in Report-P5-Differential_Expression_Analysis.pdf and the epigenetically marked (**H3K4me3**) promoters in the **liver cell line** is
 calculated as following:
 
 ```{r}
