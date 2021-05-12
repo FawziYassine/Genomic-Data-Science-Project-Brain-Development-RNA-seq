@@ -37,6 +37,7 @@ fastq-dump -v --gzip --split-files -O /data/sra SRR2071350
 printf “\n****** SRR2071350 is downloaded  ...\n\n”
 ```
 
+---
 After saving the above script as *download-sra-reads.sh* in *bash-scripts* directory, the following Bash command was used for running it:
 
 ```{bash eval=FALSE}

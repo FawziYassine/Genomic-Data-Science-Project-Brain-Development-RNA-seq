@@ -54,7 +54,7 @@ sorted_significant_differ_res_deseq2_shrunk = res_deseq2_shrunk_annotated[
 upload_df = data.frame(gene = sorted_significant_differ_res_deseq2_shrunk$row, name = sorted_significant_differ_res_deseq2_shrunk$symbol,
                        log2fc = sorted_significant_differ_res_deseq2_shrunk$log2FoldChange, pval = sorted_significant_differ_res_deseq2_shrunk$pvalue,
                        padj = sorted_significant_differ_res_deseq2_shrunk$padj)       
-write.table(upload_df, "../Differentially_Expressed_Genes-results.tsv", quote = FALSE, sep = '\t') 
+write.table(upload_df, "../differentially_expressed_genes-Results.tsv", quote = FALSE, sep = '\t') 
           ```
 
 # 3. MA-plot between All the Samples
