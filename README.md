@@ -4,7 +4,7 @@ In this [project](https://www.coursera.org/learn/genomic-data-science-project) I
    
 The aim of this experiment is to study the development of the human brain across the lifespan. The data generated measured gene expression from different individuals across the human lifespan. The authors studied 6 different age groups: fetal (<0 years), infant (0-1 years), child (1-10 years), adolescent (10-20 years), adult (20-50 years) and old, (50+ years), and each age group had 6 indiividuals. They were looking for genes that showed patterns of expression that changed between the 6 age groups.
   
-Here, seeking the manageability of the data, I only consider 2 out of 6 age groups: fetal (<0 years) and adult (20-50 years) age groups, and each age group had 3 individuals only.
+Here, limited by the manageability of the data, I only consider 2 out of 6 age groups: fetal (<0 years) and adult (20-50 years) age groups, and each age group had only 3 individuals.
   
 PDF reports describing the, step by step, analysis are provided inl:
   * [Report-P1-Getting_the_Data.pdf](Report-P1-Getting_the_Data.pdf)
