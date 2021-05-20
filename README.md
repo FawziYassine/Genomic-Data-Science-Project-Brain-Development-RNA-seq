@@ -6,7 +6,7 @@ The aim of this experiment is to study the development of the human brain across
   
 Here, seeking the manageability of the data, I only consider 2 out of 6 age groups: fetal (<0 years) and adult (20-50 years) age groups, and each age group had 3 individuals only.
   
-PDF reports describing in step-by-step the analysis are provided in [Report-P1-Getting_the_Data.pdf](Report-P1-Getting_the_Data.pdf), 
+PDF reports describing, step by step, the analysis are provided in [Report-P1-Getting_the_Data.pdf](Report-P1-Getting_the_Data.pdf), 
 [Report-P2-Aligning_the_Reads.pdf](Report-P2-Aligning_the_Reads.pdf), 
 [Report-P3-Counting_the_Reads.pdf](Report-P3-Counting_the_Reads.pdf), 
 [Report-P4-Exploratory_Analysis.pdf](Report-P4-Exploratory_Analysis.pdf), 
