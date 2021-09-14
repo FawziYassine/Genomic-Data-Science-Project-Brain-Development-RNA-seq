@@ -7,12 +7,13 @@ The aim of this experiment is to study the development of the human brain across
 Here, limited by the manageability of the data, I only consider 2 out of 6 age groups: fetal (<0 years) and adult (20-50 years) age groups, and each age group had only 3 individuals.
   
 PDF reports describing the, step by step, analysis are provided in:
-  * [P1-Getting_the_Data.pdf](P1-Getting_the_Data.pdf)
-  * [P2-Aligning_the_Reads.pdf](P2-Aligning_the_Reads.pdf)
-  * [P3-Counting_the_Reads.pdf](P3-Counting_the_Reads.pdf)
-  * [P4-Exploratory_Analysis.pdf](P4-Exploratory_Analysis.pdf)
-  * [P5-Differential_Expression_Analysis.pdf](P5-Differential_Expression_Analysis.pdf)
-  * [P6-Epigenetics_Analysis.pdf](P6-Epigenetics_Analysis.pdf)
+* [P1-Getting_the_Data.pdf](Analysis-Reports/P1-Getting_the_Data.pdf)
+* [P2-Aligning_the_Reads.pdf](Analysis-Reports/P2-Aligning_the_Reads.pdf)
+* [P3-Counting_the_Reads.pdf](Analysis-Reports/P3-Counting_the_Reads.pdf)
+* [P4-Exploratory_Analysis.pdf](Analysis-Reports/P4-Exploratory_Analysis.pdf)
+* [P5-Differential_Expression_Analysis.pdf](Analysis-Reports/P5-Differential_Expression_Analysis.pdf)
+* [P6-Epigenetics_Analysis.pdf](Analysis-Reports/P6-Epigenetics_Analysis.pdf)
+
  
 The corresponding Markdown files are provided in [Notebooks-RMarkdown](Notebooks-RMarkdown).  
 
