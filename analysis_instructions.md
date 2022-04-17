@@ -97,7 +97,7 @@
 
 9. Quantifying the abundance of genes in each sample using HTseq.
       
-       nohup sxh bash-scripts/htseq-count.sh > htseq-count.out &
+       nohup sh bash-scripts/htseq-count.sh > htseq-count.out &
      
 9. Analysis using R:
   + Merging the Count Files:  
